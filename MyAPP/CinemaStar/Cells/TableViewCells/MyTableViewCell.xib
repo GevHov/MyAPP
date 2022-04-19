@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTableViewCell" rowHeight="104" id="jEh-in-uO2" customClass="MyTableViewCell" customModule="MyFirstAPP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jEh-in-uO2" id="eBd-0l-Gh2">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qCL-xp-JRg">
+                        <rect key="frame" x="0.0" y="0.0" width="387" height="104"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vf1-Dx-taa">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="qCL-xp-JRg" firstAttribute="leading" secondItem="eBd-0l-Gh2" secondAttribute="leading" id="E2g-IS-oYk"/>
+                    <constraint firstAttribute="trailing" secondItem="qCL-xp-JRg" secondAttribute="trailing" id="OU2-Eb-soz"/>
+                    <constraint firstAttribute="bottom" secondItem="qCL-xp-JRg" secondAttribute="bottom" id="ZXK-3r-ZNe"/>
+                    <constraint firstItem="qCL-xp-JRg" firstAttribute="top" secondItem="eBd-0l-Gh2" secondAttribute="top" id="jy6-jM-gHh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="ibb-7F-Gme"/>
+            <connections>
+                <outlet property="collectionView" destination="qCL-xp-JRg" id="C4g-yX-Zqe"/>
+            </connections>
+            <point key="canvasLocation" x="111" y="-48"/>
+        </tableViewCell>
+    </objects>
+</document>
